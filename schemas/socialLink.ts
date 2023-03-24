@@ -1,12 +1,12 @@
 export default {
-    name: 'project',
+    name: 'socialLink',
     type: 'document',
-    title: 'Project',
+    title: 'Social Link',
     fields: [
         {
-            name: 'name',
+            name: 'title',
             type: 'string',
-            title: 'Name'
+            title: 'Title'
         },
         {
             name: 'image',

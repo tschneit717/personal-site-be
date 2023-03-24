@@ -11,6 +11,22 @@ export default defineType({
             title: 'Name'
         }),
         defineField({
+            name: 'slug',
+            type: 'slug',
+            title: 'Slug',
+            options: {
+                //Change to schema title to automatically populate
+                source: "title",
+                slugify: (input) =>
+                    input
+                        .toLowerCase()
+                        //Remove spaces
+                        .replace(/\s+/g, "-")
+                        //Remove special characters
+                        .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, ""),
+            },
+        }),
+        defineField({
             name: 'title',
             type: 'string',
             title: 'Title'
