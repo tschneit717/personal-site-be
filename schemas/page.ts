@@ -37,6 +37,11 @@ export default defineType({
             title: 'Tagline'
         }),
         defineField({
+            name: 'accent',
+            type: 'string',
+            title: 'accent'
+        }),
+        defineField({
             name: 'content',
             type: 'text',
             title: 'Content'
