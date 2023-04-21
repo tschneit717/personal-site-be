@@ -32,6 +32,11 @@ export default defineType({
             title: 'Title'
         }),
         defineField({
+            name: 'mobileTitle',
+            type: 'string',
+            title: 'Mobile Friendly Title'
+        }),
+        defineField({
             name: 'tagline',
             type: 'string',
             title: 'Tagline'
