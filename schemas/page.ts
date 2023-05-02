@@ -48,8 +48,16 @@ export default defineType({
         }),
         defineField({
             name: 'content',
-            type: 'text',
-            title: 'Content'
+            type: 'array',
+            title: 'Content',
+            of: [
+                {
+                type: 'block'
+                },
+                {
+                type: 'image'
+                }
+            ]
         }),
         defineField({
             name: 'uses',
