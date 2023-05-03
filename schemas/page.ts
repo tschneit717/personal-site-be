@@ -83,6 +83,19 @@ export default defineType({
                     ]
                 }
             ],
+            hidden: ({ document }): boolean => document?.title !== 'Projects'
+        }),
+        defineField({
+            name: 'companies',
+            type: 'array',
+            of: [
+                {
+                    type: 'reference',
+                    to: [
+                        { type: 'company' }
+                    ]
+                }
+            ],
             hidden: ({ document }): boolean => document?.title !== 'Work'
         })
     ]
