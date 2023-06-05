@@ -47,15 +47,20 @@ export default defineType({
             title: 'accent'
         }),
         defineField({
+            name: 'image',
+            type: 'image',
+            title: 'Image'
+        }),
+        defineField({
             name: 'content',
             type: 'array',
             title: 'Content',
             of: [
                 {
-                type: 'block'
+                    type: 'block'
                 },
                 {
-                type: 'image'
+                    type: 'image'
                 }
             ]
         }),
